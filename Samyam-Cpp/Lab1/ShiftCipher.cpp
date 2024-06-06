@@ -24,16 +24,20 @@ string decrypt(string ciphertext, int shift) {
 
 int main() {
     string plaintext;
-    int shift = 3;
+    int shift;
 
     cout<<"Give plainText as input"<<endl;
     cin>>plaintext;
+
+    cout<<"Give the key "<<endl;
+    cin>>shift;
 
     cout << "Original: " << plaintext << endl;
     string encrypted = encrypt(plaintext, shift);
 
     cout<<"The key is "<<shift<<endl;
     cout << "Encrypted: " << encrypted << endl;
+    
     string decrypted = decrypt(encrypted, shift);
     cout << "Decrypted: " << decrypted << endl;
 
