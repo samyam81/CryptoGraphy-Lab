@@ -1,30 +1,5 @@
 package main
 
-import (
-    "fmt"
-)
-
-func main() {
-    var PlainText string
-    var key int
-
-    fmt.Println("Enter your Plain-text")
-    fmt.Scanf("%s", &PlainText)
-
-   	fmt.Println("Enter your key! (0-25) ")
-	_, err := fmt.Scan(&key)
-		if err != nil {
-    		fmt.Println("Error:", err)
-    		return
-		}	
-
-    encrypted := encrypt(PlainText, key)
-    fmt.Println("The encrypted message is", encrypted)
-
-    decrypted := decrypt(encrypted, key)
-    fmt.Println("The decrypted message is", decrypted)
-}
-
 func encrypt(plaintext string, key int) string {
     ciphertext := ""
 
