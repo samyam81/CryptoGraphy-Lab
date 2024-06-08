@@ -1,8 +1,7 @@
 package main
 
-// import "fmt"
 
-func ExtendedEuclideanAlgorithm(a, b int) (gcd, x, y int) {
+func ExtendedEuclideaNAlgorithm(a, b int) (gcd, x, y int) {
     if a == 0 {
         return b, 0, 1
     }
