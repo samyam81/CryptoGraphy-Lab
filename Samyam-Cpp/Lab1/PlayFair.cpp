@@ -122,21 +122,16 @@ public:
 
 int main() {
     string key;
-
     cout << "Enter the key: ";
     cin >> key;
     PlayfairCipher cipher(key);
-
     string plaintext;
-
     cout << "Enter the plaintext: ";
     cin >> plaintext;
-
     string encrypted = cipher.encrypt(plaintext);
     cout << "Encrypted: " << encrypted << endl;
-
     string decrypted = cipher.decrypt(encrypted);
     cout << "Decrypted: " << decrypted << endl;
-
+    cout<<"Name: Samyam Subedi \nRoll No: 86 \nSection: C"<<endl;
     return 0;
 }

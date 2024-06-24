@@ -64,5 +64,7 @@ int main() {
     cout << "\nIterations of Extended Euclidean Algorithm:" << endl;
     displayIterations(iterations);
 
+    cout<<"Name: Samyam Subedi \nRoll No: 86 \nSection: C"<<endl;
+
     return 0;
 }

@@ -24,5 +24,7 @@ int main() {
     int gcd = euclideanGCD(num1, num2);
     cout << "GCD of " << num1 << " and " << num2 << " is: " << gcd << endl;
 
+    cout<<"Name: Samyam Subedi \nRoll No: 86 \nSection: C"<<endl;
+    
     return 0;
 }

@@ -21,5 +21,7 @@ int main() {
     int additiveInverse = computeAdditiveInverse(number, modulo);
     cout << "The additive inverse of " << number << " modulo " << modulo << " is: " << additiveInverse << endl;
 
+    cout<<"Name: Samyam Subedi \nRoll No: 86 \nSection: C"<<endl;
+
     return 0;
 }

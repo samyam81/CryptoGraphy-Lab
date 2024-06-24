@@ -29,5 +29,7 @@ int main() {
         cout << num1 << " and " << num2 << " are not coprime." << endl;
     }
 
+    cout<<"Name: Samyam Subedi \nRoll No: 86 \nSection: C"<<endl;
+    
     return 0;
 }

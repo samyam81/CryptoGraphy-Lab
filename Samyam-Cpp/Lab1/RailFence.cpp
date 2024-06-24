@@ -90,5 +90,7 @@ int main() {
     string decrypted = railFenceDecrypt(encrypted, key);
     cout << "Decrypted message: " << decrypted << endl;
 
+    cout<<"Name: Samyam Subedi \nRoll No: 86 \nSection: C"<<endl;
+
     return 0;
 }
