@@ -15,6 +15,7 @@ private:
         int k = 0;
         bool used[26] = {false};
 
+        // Populate the matrix with the key
         for (char c : key) {
             if (!isalpha(c))
                 continue;
@@ -26,6 +27,7 @@ private:
             }
         }
 
+        // Fill the remaining matrix with the alphabet (excluding 'J')
         for (char c = 'A'; c <= 'Z'; c++) {
             if (c == 'J') // Skip 'J'
                 continue;
@@ -118,20 +120,37 @@ public:
 
         return decryptedText;
     }
+
+    void printMatrix() {
+        cout << "Playfair Cipher Matrix:" << endl;
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                cout << matrix[i][j] << " ";
+            }
+            cout << endl;
+        }
+    }
 };
 
 int main() {
     string key;
     cout << "Enter the key: ";
     cin >> key;
+    
     PlayfairCipher cipher(key);
+    cipher.printMatrix(); // Print the key matrix
+    
     string plaintext;
     cout << "Enter the plaintext: ";
     cin >> plaintext;
+    
     string encrypted = cipher.encrypt(plaintext);
     cout << "Encrypted: " << encrypted << endl;
+    
     string decrypted = cipher.decrypt(encrypted);
     cout << "Decrypted: " << decrypted << endl;
-    cout<<"Name: Samyam Subedi \nRoll No: 86 \nSection: C"<<endl;
+
+    cout << "Name: Samyam Subedi \nRoll No: 86 \nSection: C" << endl;
+    
     return 0;
 }
